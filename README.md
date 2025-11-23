@@ -34,7 +34,7 @@ sudo docker run -d --name mindustry -p 6567:6567 docker/mindustry-server:latest
 # 注意
 
 启动后原版端不会自动host
-
+也就是说你需要插件或者mod来辅助作为host的启动
 
 ## 许可证
 
