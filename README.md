@@ -20,10 +20,10 @@ mindustry-server
 
 
 # 游戏版本会根据服务端来定
+你需要将服务端放入同一个目录
 
-
-# 启动
-创建容器
+# 构建镜像
+使用
 sudo docker run -d --name mindustry -p 6567:6567 docker/mindustry-server:latest
 
 启动地图你需要进入容器终端里面使用host来随机地图
