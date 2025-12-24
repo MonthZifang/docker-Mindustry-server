@@ -48,5 +48,5 @@ sudo docker run -d --name mindustry -p 6567:6567 docker/mindustry-server:latest
 
 您可以在 [GPL 3.0 许可证全文](https://www.gnu.org/licenses/gpl-3.0.html) 阅读详细内容。
 
-源代码可以从 [仓库链接](https://github.com/Anuken/Mindustry) 获取。
+服务端源代码可以从 [仓库链接](https://github.com/Anuken/Mindustry) 获取。
 #
