@@ -8,31 +8,34 @@
 
 
 # 信息
-项目使用了
-Java17
-docker
-mindustry-server
+基础镜像：openjdk:17-jdk-alpine
+安装的软件包：curl  bash  screen
 
 
 
-# 插件端目前来讲没测试过
-所以你如果想跑插件端的话可以自己尝试如果我后续有时间也会自己再尝试一下
+
+# 端
+目前只使用了原版以及WZ进行测试理论上其他的也可以
 
 
 # 游戏版本会根据服务端来定
 你需要将服务端放入同一个目录
 
+#一键构建
+使用start.sh脚本即可一键构建并创建容器  sh start.sh
+需要使用sudo 如果您已将docker添加至用户组则不需要 但是源文件还是使用了sudo 你可以自行取消掉
+
+
 # 构建镜像
-使用
+docker build -t mindustry-server:latest
 
-
-
-
-创建容器
+#创建容器
 sudo docker run -d --name mindustry -p 6567:6567 docker/mindustry-server:latest
 
-启动地图你需要进入容器终端里面使用host来随机地图
+启动地图你需要进入容器终端根据提示来链接守护进程使用host来随机地图
+如果你使用了WZ等等等等插件自行随机地图则可以忽略
 
+容器默认配置是360m内存 2核 镜像空间约552.9MB
 
 镜像导入即可或者自己构建
 
