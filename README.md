@@ -53,7 +53,11 @@ docker build -t mindustry-server:latest .
 ```bash
 sudo docker run -d \
   --name mindustry \
-  -p 6567:6567 \
+  -p 6567:6567/tcp \
+  -p 6567:6567/udp \
+  --memory="360m" \
+  --cpus="2" \
+  -v /server/Mindustry:/server/Mindustry \
   mindustry-server:latest
 ```
 
